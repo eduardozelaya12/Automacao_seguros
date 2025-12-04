@@ -1,0 +1,167 @@
+[
+    {
+        "output": {
+            "datos_poliza": {
+                "compania": "SAN CRISTÓBAL SEGUROS S.A.",
+                "numero_poliza": "457553/9",
+                "vigencia": {
+                    "inicio": "25/11/2025",
+                    "fin": "25/11/2026"
+                },
+                "lugar_emision": "MONTEVIDEO",
+                "fecha_emision": "25-11-2025"
+            },
+            "datos_basicos": {
+                "corredor": "Paulo Benítez",
+                "nombre_asegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "tomador_asegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "domicilio_asegurado": "Filadelfia M26 Solar 10 0000, 15002 San José de Carrasco, Canelones",
+                "tipo_asegurado": "Consumidor Final",
+                "tramite": "EMISION"
+            },
+            "datos_vehiculo": {
+                "marca_modelo": "KIA MOTORS PICANTO 1.1 MPFI DIR. A/A. BLOQ",
+                "ano": "2010",
+                "motor": "G4HE8481121",
+                "chasis": "KNABA24429T665417",
+                "destino": "PARTICULAR",
+                "categoria": "AUTOMOVIL",
+                "combustible": "ELE",
+                "calidad": "PROPIETARIO"
+            },
+            "datos_cobertura": {
+                "cobertura": "TERCEROS",
+                "moneda": "PES",
+                "deducible": 25898,
+                "zona_circulacao_corrigida": "CANELONES",
+                "zona_circulacao": "San José de Carrasco, Canelones"
+            },
+            "condiciones_pago": {
+                "premio_total": 13415,
+                "total": 13415,
+                "moneda": "PES",
+                "cuotas": 3
+            },
+            "datos_cliente": {
+                "assegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "celular": "099285928",
+                "email": "malupe2019@gmail.com",
+                "documento": "18982222",
+                "fecha_nacimiento": "04/01/1962",
+                "tipo": "PARTICULAR (Lineas Particulares)",
+                "domicilio": "Filadelfia M26 Solar 10 0000, 15002 San José de Carrasco, Canelones",
+                "Departamento": "CANELONES"
+            }
+        }
+    },
+    {
+        "output": {
+            "datos_poliza": {
+                "compania": "SAN CRISTÓBAL SEGUROS S.A.",
+                "numero_poliza": "457553/9",
+                "vigencia": {
+                    "inicio": "25/11/2025",
+                    "fin": "25/11/2026"
+                },
+                "lugar_emision": "MONTEVIDEO",
+                "fecha_emision": "25-11-2025"
+            },
+            "datos_basicos": {
+                "corredor": "Paulo Benítez",
+                "nombre_asegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "tomador_asegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "domicilio_asegurado": "Filadelfia M26 Solar 10 0000, 15002 San José de Carrasco, Canelones",
+                "tipo_asegurado": "Consumidor Final",
+                "tramite": "EMISION"
+            },
+            "datos_vehiculo": {
+                "marca_modelo": "KIA MOTORS PICANTO 1.1 MPFI DIR. A/A. BLOQ",
+                "ano": "2010",
+                "motor": "G4HE8481121",
+                "chasis": "KNABA24429T665417",
+                "destino": "PARTICULAR",
+                "categoria": "AUTOMOVIL",
+                "combustible": "ELE",
+                "calidad": "PROPIETARIO"
+            },
+            "datos_cobertura": {
+                "cobertura": "TERCEROS",
+                "moneda": "PES",
+                "deducible": 25898,
+                "zona_circulacao_corrigida": "CANELONES",
+                "zona_circulacao": "San José de Carrasco, Canelones"
+            },
+            "condiciones_pago": {
+                "premio_total": 13415,
+                "total": 13415,
+                "moneda": "PES",
+                "cuotas": 3
+            },
+            "datos_cliente": {
+                "assegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "celular": "099285928",
+                "email": "malupe2019@gmail.com",
+                "documento": "18982222",
+                "fecha_nacimiento": "04/01/1962",
+                "tipo": "PARTICULAR (Lineas Particulares)",
+                "domicilio": "Filadelfia M26 Solar 10 0000, 15002 San José de Carrasco, Canelones",
+                "Departamento": "CANELONES"
+            }
+        }
+    },
+    {
+        "output": {
+            "datos_poliza": {
+                "compania": "SAN CRISTÓBAL SEGUROS S.A.",
+                "numero_poliza": "457553/9",
+                "vigencia": {
+                    "inicio": "25/11/2025",
+                    "fin": "25/11/2026"
+                },
+                "lugar_emision": "MONTEVIDEO",
+                "fecha_emision": "25-11-2025"
+            },
+            "datos_basicos": {
+                "corredor": "Paulo Benítez",
+                "nombre_asegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "tomador_asegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "domicilio_asegurado": "Filadelfia M26 Solar 10 0000, 15002 San José de Carrasco, Canelones",
+                "tipo_asegurado": "Consumidor Final",
+                "tramite": "EMISION"
+            },
+            "datos_vehiculo": {
+                "marca_modelo": "KIA MOTORS PICANTO 1.1 MPFI DIR. A/A. BLOQ",
+                "ano": "2010",
+                "motor": "G4HE8481121",
+                "chasis": "KNABA24429T665417",
+                "destino": "PARTICULAR",
+                "categoria": "AUTOMOVIL",
+                "combustible": "ELE",
+                "calidad": "PROPIETARIO"
+            },
+            "datos_cobertura": {
+                "cobertura": "TERCEROS",
+                "moneda": "PES",
+                "deducible": 25898,
+                "zona_circulacao_corrigida": "CANELONES",
+                "zona_circulacao": "San José de Carrasco, Canelones"
+            },
+            "condiciones_pago": {
+                "premio_total": 13415,
+                "total": 13415,
+                "moneda": "PES",
+                "cuotas": 3
+            },
+            "datos_cliente": {
+                "assegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
+                "celular": "099285928",
+                "email": "malupe2019@gmail.com",
+                "documento": "18982222",
+                "fecha_nacimiento": "04/01/1962",
+                "tipo": "PARTICULAR (Lineas Particulares)",
+                "domicilio": "Filadelfia M26 Solar 10 0000, 15002 San José de Carrasco, Canelones",
+                "Departamento": "CANELONES"
+            }
+        }
+    }
+]
