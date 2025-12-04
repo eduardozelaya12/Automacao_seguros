@@ -19,9 +19,13 @@ def safe_write(value, interval=0.1):
         return True
     return False
 
-def processar_clientes():
+def processar_clientes(dados_json=None, arquivo_json=None):
     """
     Processa cadastro de clientes a partir do JSON
+    
+    Args:
+        dados_json: Lista de dados já carregados (para uso via API)
+        arquivo_json: Nome do arquivo JSON para ler (para uso standalone)
     """
 
     print("🔵 Abrindo Aplicacao de Seguros (Velneo vClient)...")
@@ -66,8 +70,16 @@ def processar_clientes():
     # CARREGAR JSON
     # ============================================
     try:
-        with open('clientes_exemplo_multiplos.json', 'r', encoding='utf-8') as f:
-            dados = json.load(f)
+        # Se dados_json foi fornecido (via API), usar eles
+        if dados_json is not None:
+            print("📡 Usando dados recebidos via API")
+            dados = dados_json
+        else:
+            # Senão, ler de arquivo (modo standalone)
+            arquivo = arquivo_json or 'clientes_exemplo_multiplos.json'
+            print(f"📁 Lendo arquivo: {arquivo}")
+            with open(arquivo, 'r', encoding='utf-8') as f:
+                dados = json.load(f)
         
         # Ajustar para nova estrutura: clientes_json[0]['output']['datos_cliente']
         clientes_ativos = []
@@ -88,21 +100,21 @@ def processar_clientes():
     # ============================================
     print("⏳ Aguarde 3 segundos para posicionar na janela...\n")
     time.sleep(3)
-    
+    # Navegar com TAB até o local desejado  
+    pyautogui.press('enter')
+    time.sleep(5)
+    pyautogui.press('tab')
+    pyautogui.press('tab')
+    pyautogui.press('tab')
+    pyautogui.press('tab')
+    print(f"   ✅ Botão encontrado - clicando...")
+    pyautogui.press('enter')
     # ============================================
     # PROCESSAR CADA CLIENTE
     # ============================================
     for i, cliente in enumerate(clientes_ativos, 1):
 
-        # Navegar com TAB até o local desejado  
-        pyautogui.press('enter')
-        time.sleep(5)
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        print(f"   ✅ Botão encontrado - clicando...")
-        pyautogui.press('enter')
+        
         
         print(f"\n{'='*60}")
         print(f"[{i}/{len(clientes_ativos)}] 👤 {cliente.get('assegurado', 'N/A')}")
@@ -285,7 +297,7 @@ def processar_clientes():
         # ============================================
         # GUARDAR CLIENTE
         # ============================================
-        for _ in range(9):
+        for _ in range(8):
             pyautogui.press('tab')
         
         print("   💾 Guardando cliente...")

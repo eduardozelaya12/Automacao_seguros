@@ -7,9 +7,13 @@ import json
 pyautogui.FAILSAFE = True
 pyautogui.PAUSE = 0.8
 
-def processar_automoveis():
+def processar_automoveis(dados_json=None, arquivo_json=None):
     """
     Processa cadastro de automóveis a partir do JSON
+    
+    Args:
+        dados_json: Lista de dados já carregados (para uso via API)
+        arquivo_json: Nome do arquivo JSON para ler (para uso standalone)
     """
 
     print("🔵 Abrindo Aplicacao de Seguros (Velneo vClient)...")
@@ -47,8 +51,16 @@ def processar_automoveis():
     # CARREGAR JSON
     # ============================================
     try:
-        with open('carros.json', 'r', encoding='utf-8') as f:
-            dados = json.load(f)
+        # Se dados_json foi fornecido (via API), usar eles
+        if dados_json is not None:
+            print("📡 Usando dados recebidos via API")
+            dados = dados_json
+        else:
+            # Senão, ler de arquivo (modo standalone)
+            arquivo = arquivo_json or 'carros.json'
+            print(f"📁 Lendo arquivo: {arquivo}")
+            with open(arquivo, 'r', encoding='utf-8') as f:
+                dados = json.load(f)
         
         # Extrair dados de cada carro
         carros_ativos = []
@@ -107,6 +119,8 @@ def processar_automoveis():
         pyautogui.press('enter')
         # DATOS DE LA POLIZA
         # 13 tabs me leva para o Desde de Datos de la Poliza
+        pyautogui.press('right')
+        pyautogui.press('left')
         for _ in range(13):
             pyautogui.press('tab')
 
@@ -127,7 +141,6 @@ def processar_automoveis():
         pyautogui.press('tab')
         pyautogui.write(vehiculo.get('combustible', 'N/A')) # Valor do Ano do Automovil
 
-        pyautogui.press('tab')
         pyautogui.press('tab')
         # 1 tab para inserir o valor de categoria do vehiculo
         categoria = vehiculo.get('categoria', 'N/A')
@@ -166,6 +179,7 @@ def processar_automoveis():
         # Navegar até a categoria correta
         if categoria in categorias_map:
             for _ in range(categorias_map[categoria]):
+                print(f"   ✅ Navegando para a categoria: {categoria}")
                 pyautogui.press('down')
             print(f"   ✅ Categoria selecionada: {categoria}")
         else:
@@ -204,6 +218,7 @@ def processar_automoveis():
         # Navegar até o destino correto
         if destino in destinos_map:
             for _ in range(destinos_map[destino]):
+                print(f"   ✅ Navegando para o destino: {destino}")
                 pyautogui.press('down')
             print(f"   ✅ Destino selecionado: {destino}")
         else:
@@ -224,6 +239,7 @@ def processar_automoveis():
         # Navegar até a calidad correta
         if calidad in calidad_map:
             for _ in range(calidad_map[calidad]):
+                print(f"   ✅ Navegando para a calidad: {calidad}")
                 pyautogui.press('down')
             print(f"   ✅ Calidad selecionada: {calidad}")
         else:
@@ -303,6 +319,7 @@ def processar_automoveis():
         # Navegar até a zona de circulação correta
         if zona_circulacao in zona_circulacao_map:
             for _ in range(zona_circulacao_map[zona_circulacao]):
+                print(f"   ✅ Navegando para a zona de circulação: {zona_circulacao}")
                 pyautogui.press('down')
             print(f"   ✅ Zona de circulação selecionada: {zona_circulacao}")
         else:
@@ -359,7 +376,7 @@ def processar_automoveis():
         pyautogui.write(str(nome_assegurado))
 
         
-        for _ in range(25):
+        for _ in range(28):
             pyautogui.press('tab')
         # pyautogui.press('enter')
         for _ in range(2):

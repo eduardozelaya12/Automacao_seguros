@@ -16,41 +16,5 @@
                 "Observaciones": "none"
             }
         }
-    },
-    {
-        "output": {
-            "datos_cliente": {
-                "numero_cliente": "123412342134",
-                "assegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
-                "corredor": "PAULO BENITEZ",
-                "celular": "099285928",
-                "email": "maluque2019@gmail.com",
-                "documento": "18982222",
-                "fecha_nacimiento": "04/01/1962",
-                "tipo": "Particular",
-                "domicilio": "Filadelfia M26 Solar 10 0000, 15002 San José de Carrasco, Canelones",
-                "dir_cobro": "none",
-                "Departamento": "Canelones",
-                "Observaciones": "none"
-            }
-        }   
-    },
-    {
-        "output": {
-            "datos_cliente": {
-            "numero_cliente": "123412342134",
-            "assegurado": "LUQUE DELBONO, MARIA DE LOS ANGELES",
-            "corredor": "PAULO BENITEZ",
-            "celular": "099285928",
-            "email": "maluque2019@gmail.com",
-            "documento": "18982222",
-            "fecha_nacimiento": "04/01/1962",
-            "tipo": "Particular",
-            "domicilio": "Filadelfia M26 Solar 10 0000, 15002 San José de Carrasco, Canelones",
-            "dir_cobro": "none",
-            "Departamento": "Canelones",
-            "Observaciones": "none"
-            }
-        }
     }
 ]
