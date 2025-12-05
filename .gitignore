@@ -47,7 +47,7 @@ data/*.xlsx
 
 # Ignorar JSONs com dados reais (mas permitir exemplos)
 clientes.json
-carros.json
+# carros.json
 
 # Manter estrutura de pastas
 !output/.gitkeep
